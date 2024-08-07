@@ -11,12 +11,12 @@ This project is a multi-tenant backend API for managing companies and their empl
 
 ## Features
 
-- Overall Admin Management
+- **Overall Admin Management**
   - Add and remove companies
-- Employee Management
+- **Employee Management**
   - Admin of the company can invite, add, and remove employees
   - Employees can edit their own profile and update their details
-- Project Management
+- **Project Management**
   - Employees can create, edit, and delete projects
   - Employees can post comments on the project, and other users should get updates and respond in real-time
 
@@ -24,23 +24,51 @@ This project is a multi-tenant backend API for managing companies and their empl
 
 ### Backend
 
-1. Install Python dependencies:
+1. **Install Python dependencies:**
     ```sh
     cd backend
     pip install -r requirements.txt
     ```
 
-2. Start FastAPI server:
+2. **Start FastAPI server:**
     ```sh
     uvicorn app.main:app --reload
     ```
 
 ### Docker
 
-1. Build and start the containers:
+1. **Build and start the containers:**
     ```sh
     docker-compose up --build
     ```
 
-2. Access the application:
-    - Backend: http://localhost:3000
+2. **Access the application:**
+    - Backend: http://localhost:3000 (default FastAPI port)
+
+
+## Deployment
+
+### Docker
+
+1. **Build and start the containers in detached mode:**
+    ```sh
+    docker-compose up --build -d
+    ```
+
+2. **Stop the containers:**
+    ```sh
+    docker-compose down
+    ```
+
+## Project Structure
+
+### Backend
+
+- `app/`: FastAPI application directory
+  - `main.py`: Entry point for the FastAPI application
+  - `models/`: Pydantic models and database schemas
+  - `routes/`: API route definitions
+  - `usecase/`: Business logic
+  - `services/`: services
+  - `utils/`: Utility functions and helpers
+
