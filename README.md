@@ -1,6 +1,6 @@
 # Multi-Tenant Company and Employee Management System
 
-This project is a multi-tenant backend API for managing companies and their employees, as well as projects. It includes features for admin management, employee management, project management, real-time communication, and a front-end UI. The backend is built using FastAPI and MongoDB, while the front end is built with ReactJS, HTML, and CSS.
+This project is a multi-tenant backend API for managing companies and their employees, as well as projects. It includes features for admin management, employee management, project management, real-time communication, and a front-end UI. The backend is built using FastAPI and MongoDB.
 
 ## Requirements
 
